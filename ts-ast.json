@@ -1,0 +1,277 @@
+{
+  "pos": 0,
+  "end": 75,
+  "flags": 0,
+  "modifierFlagsCache": 0,
+  "transformFlags": 33,
+  "kind": 294,
+  "statements": [
+    {
+      "pos": 0,
+      "end": 75,
+      "flags": 0,
+      "modifierFlagsCache": 0,
+      "transformFlags": 1048609,
+      "parent": "[Circular ~]",
+      "kind": 248,
+      "name": {
+        "pos": 8,
+        "end": 18,
+        "flags": 0,
+        "modifierFlagsCache": 0,
+        "transformFlags": 0,
+        "parent": "[Circular ~.statements.0]",
+        "kind": 78,
+        "escapedText": "factorial"
+      },
+      "parameters": [
+        {
+          "pos": 20,
+          "end": 29,
+          "flags": 0,
+          "modifierFlagsCache": 0,
+          "transformFlags": 1,
+          "parent": "[Circular ~.statements.0]",
+          "kind": 159,
+          "name": {
+            "pos": 20,
+            "end": 21,
+            "flags": 0,
+            "modifierFlagsCache": 0,
+            "transformFlags": 0,
+            "parent": "[Circular ~.statements.0.parameters.0]",
+            "kind": 78,
+            "escapedText": "n"
+          },
+          "type": {
+            "pos": 22,
+            "end": 29,
+            "flags": 0,
+            "modifierFlagsCache": 0,
+            "transformFlags": 1,
+            "parent": "[Circular ~.statements.0.parameters.0]",
+            "kind": 143
+          }
+        }
+      ],
+      "body": {
+        "pos": 30,
+        "end": 75,
+        "flags": 0,
+        "modifierFlagsCache": 0,
+        "transformFlags": 1048608,
+        "parent": "[Circular ~.statements.0]",
+        "kind": 227,
+        "statements": [
+          {
+            "pos": 32,
+            "end": 73,
+            "flags": 0,
+            "modifierFlagsCache": 0,
+            "transformFlags": 1048608,
+            "parent": "[Circular ~.statements.0.body]",
+            "kind": 239,
+            "expression": {
+              "pos": 41,
+              "end": 72,
+              "flags": 0,
+              "modifierFlagsCache": 0,
+              "transformFlags": 0,
+              "parent": "[Circular ~.statements.0.body.statements.0]",
+              "kind": 214,
+              "condition": {
+                "pos": 41,
+                "end": 47,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "parent": "[Circular ~.statements.0.body.statements.0.expression]",
+                "kind": 213,
+                "left": {
+                  "pos": 41,
+                  "end": 43,
+                  "flags": 0,
+                  "modifierFlagsCache": 0,
+                  "transformFlags": 0,
+                  "parent": "[Circular ~.statements.0.body.statements.0.expression.condition]",
+                  "kind": 78,
+                  "escapedText": "n"
+                },
+                "operatorToken": {
+                  "pos": 43,
+                  "end": 45,
+                  "flags": 0,
+                  "modifierFlagsCache": 0,
+                  "transformFlags": 0,
+                  "parent": "[Circular ~.statements.0.body.statements.0.expression.condition]",
+                  "kind": 29
+                },
+                "right": {
+                  "pos": 45,
+                  "end": 47,
+                  "flags": 0,
+                  "modifierFlagsCache": 0,
+                  "transformFlags": 0,
+                  "parent": "[Circular ~.statements.0.body.statements.0.expression.condition]",
+                  "kind": 8,
+                  "text": "1",
+                  "numericLiteralFlags": 0
+                }
+              },
+              "questionToken": {
+                "pos": 47,
+                "end": 49,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "parent": "[Circular ~.statements.0.body.statements.0.expression]",
+                "kind": 57
+              },
+              "whenTrue": {
+                "pos": 49,
+                "end": 51,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "parent": "[Circular ~.statements.0.body.statements.0.expression]",
+                "kind": 8,
+                "text": "1",
+                "numericLiteralFlags": 0
+              },
+              "colonToken": {
+                "pos": 51,
+                "end": 53,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "parent": "[Circular ~.statements.0.body.statements.0.expression]",
+                "kind": 58
+              },
+              "whenFalse": {
+                "pos": 53,
+                "end": 72,
+                "flags": 0,
+                "modifierFlagsCache": 0,
+                "transformFlags": 0,
+                "parent": "[Circular ~.statements.0.body.statements.0.expression]",
+                "kind": 213,
+                "left": {
+                  "pos": 53,
+                  "end": 55,
+                  "flags": 0,
+                  "modifierFlagsCache": 0,
+                  "transformFlags": 0,
+                  "parent": "[Circular ~.statements.0.body.statements.0.expression.whenFalse]",
+                  "kind": 78,
+                  "escapedText": "n"
+                },
+                "operatorToken": {
+                  "pos": 55,
+                  "end": 57,
+                  "flags": 0,
+                  "modifierFlagsCache": 0,
+                  "transformFlags": 0,
+                  "parent": "[Circular ~.statements.0.body.statements.0.expression.whenFalse]",
+                  "kind": 41
+                },
+                "right": {
+                  "pos": 57,
+                  "end": 72,
+                  "flags": 0,
+                  "modifierFlagsCache": 0,
+                  "transformFlags": 0,
+                  "parent": "[Circular ~.statements.0.body.statements.0.expression.whenFalse]",
+                  "kind": 200,
+                  "expression": {
+                    "pos": 57,
+                    "end": 67,
+                    "flags": 0,
+                    "modifierFlagsCache": 0,
+                    "transformFlags": 0,
+                    "parent": "[Circular ~.statements.0.body.statements.0.expression.whenFalse.right]",
+                    "kind": 78,
+                    "escapedText": "factorial"
+                  },
+                  "arguments": [
+                    {
+                      "pos": 68,
+                      "end": 71,
+                      "flags": 0,
+                      "modifierFlagsCache": 0,
+                      "transformFlags": 0,
+                      "parent": "[Circular ~.statements.0.body.statements.0.expression.whenFalse.right]",
+                      "kind": 213,
+                      "left": {
+                        "pos": 68,
+                        "end": 69,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "parent": "[Circular ~.statements.0.body.statements.0.expression.whenFalse.right.arguments.0]",
+                        "kind": 78,
+                        "escapedText": "n"
+                      },
+                      "operatorToken": {
+                        "pos": 69,
+                        "end": 70,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "parent": "[Circular ~.statements.0.body.statements.0.expression.whenFalse.right.arguments.0]",
+                        "kind": 40
+                      },
+                      "right": {
+                        "pos": 70,
+                        "end": 71,
+                        "flags": 0,
+                        "modifierFlagsCache": 0,
+                        "transformFlags": 0,
+                        "parent": "[Circular ~.statements.0.body.statements.0.expression.whenFalse.right.arguments.0]",
+                        "kind": 8,
+                        "text": "1",
+                        "numericLiteralFlags": 0
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "multiLine": true
+      }
+    }
+  ],
+  "endOfFileToken": {
+    "pos": 75,
+    "end": 75,
+    "flags": 0,
+    "modifierFlagsCache": 0,
+    "transformFlags": 0,
+    "parent": "[Circular ~]",
+    "kind": 1
+  },
+  "fileName": "astExplorer.tsx",
+  "text": "function factorial (n: number) {\n  return n < 1 ? 1 : n * factorial(n-1);\n}",
+  "languageVersion": 99,
+  "languageVariant": 1,
+  "scriptKind": 4,
+  "isDeclarationFile": false,
+  "hasNoDefaultLib": false,
+  "bindDiagnostics": [],
+  "pragmas": {},
+  "referencedFiles": [],
+  "typeReferenceDirectives": [],
+  "libReferenceDirectives": [],
+  "amdDependencies": [],
+  "nodeCount": 28,
+  "identifierCount": 6,
+  "identifiers": {},
+  "parseDiagnostics": [],
+  "path": "astExplorer.tsx",
+  "resolvedPath": "astExplorer.tsx",
+  "originalFileName": "astExplorer.tsx",
+  "imports": [],
+  "moduleAugmentations": [],
+  "ambientModuleNames": []
+}

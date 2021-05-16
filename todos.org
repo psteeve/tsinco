@@ -1,0 +1,9 @@
+* Create a macro 
+that take in argument a specifier in property list and call the class builder to produce objects.
+example:
+(m '(:string-literal :pos 12 :end 26 :text "hello, world"))
+=> (make-instance 'string-literal :pos 12 :end 26 :text "hello, world")
+
+* Write program that take ts file and produce sexp expression to feed parse-simple-sexp.
+** TODO Tokenizer
+
