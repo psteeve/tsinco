@@ -1,4 +1,4 @@
-(asdf:defsystem :esinco
+(asdf:defsystem :tsinco
   :serial t
   :components ((:file "syntaxkind")
                (:file "ast")

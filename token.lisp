@@ -1,8 +1,8 @@
-(defpackage :esinco.ast
+(defpackage :tsinco.ast
   (:use
    :common-lisp))
 
-(in-package :esinco.ast)
+(in-package :tsinco.ast)
 
 (define-token-class
     (open-brace-token

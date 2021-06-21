@@ -58,4 +58,4 @@
                                       :pos 12
                                       :end 113623
                                       :statements (*type-alias-declaration* *function-declaration-1* *function-declaration-2*
-                                                                            *interface-declaration*)))
+                                                                            *interface-declaration*))))

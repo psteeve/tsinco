@@ -1,8 +1,9 @@
-(defpackage :esinco.ast
+(defpackage :tsinco.ast
   (:use
-   :common-lisp))
+   :common-lisp
+   :st-utils))
 
-(in-package :esinco.ast)
+(in-package :tsinco.ast)
 
 (defun cons-form-p (form &optional (test #'keywordp))
   (and (consp form)
@@ -164,7 +165,7 @@ assume the definition of identifier exists."
 (defclass unary-expression (expression) ())
 
 (defclass identifier (primary-expression a-declaration)
-  ((kind :initarg :kind :initform :idenfier)
+  ((kind :initarg :kind :initform :identifier)
    (escaped-text :initarg :escaped-text
                  :reader :escaped-text)))
 
@@ -209,7 +210,7 @@ assume the definition of identifier exists."
 (defmethod initialize-instance :after ((object call-expression) &key)
   (with-slots (expression arguments) object
     (setf expression (parse-simple-sexp (expression object)))
-    (setf arguments (mapcar #'parse-simple-sexp (arguments object)))))
+    (setf arguments (parse-simple-sexp (arguments object)))))
 
 (defclass string-literal (literal-expression)
   ((kind :initarg :kind :initform :string-literal :reader kind)))
@@ -391,7 +392,7 @@ assume the definition of identifier exists."
 
 (defmethod initialize-instance :after ((object module-declaration) &key)
   (with-slots (body name) object
-;;    (setf body (mapcar #'parse-simple-sexp (body object)))
+    ;;    (setf body (mapcar #'parse-simple-sexp (body object)))
     (setf name (mapcar #'parse-simple-sexp (name object)))))
 
 (defclass variable-statement (statement)
@@ -723,9 +724,9 @@ assume the definition of identifier exists."
                :reader statements)
    (end-of-file-token :initarg :end-of-file-token
                       :reader end-of-file-token)
-   (file-name :initarg :file-name
-              :initform (error "Must supply a file-name")
-              :reader file-name)
+   (filename :initarg :filename
+              :initform (error "Must supply a filename")
+              :reader filename)
    (text :initarg :text
          :initform (error "Must supply a value for text")
          :reader text)
@@ -793,7 +794,7 @@ assume the definition of identifier exists."
 (defmethod initialize-instance :after ((object source-file) &key)
   (with-slots (statements end-of-file-token) object
     (setf statements (mapcar #'parse-simple-sexp (statements object)))
-    (setf end-of-file-token (mapcar #'parse-simple-sexp (end-of-file-token object)))))
+    (setf end-of-file-token (parse-simple-sexp (end-of-file-token object)))))
 
 (defclass program (script-reference-host) ())
 
