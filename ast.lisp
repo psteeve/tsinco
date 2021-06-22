@@ -725,8 +725,8 @@ assume the definition of identifier exists."
    (end-of-file-token :initarg :end-of-file-token
                       :reader end-of-file-token)
    (filename :initarg :filename
-              :initform (error "Must supply a filename")
-              :reader filename)
+             :initform (error "Must supply a filename")
+             :reader filename)
    (text :initarg :text
          :initform (error "Must supply a value for text")
          :reader text)
