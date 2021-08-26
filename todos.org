@@ -1,3 +1,5 @@
+* TODO Start with the tools first 
+
 * Create a macro 
 that take in argument a specifier in property list and call the class builder to produce objects.
 example:
@@ -6,4 +8,5 @@ example:
 
 * Write program that take ts file and produce sexp expression to feed parse-simple-sexp.
 ** TODO Tokenizer
+
 
