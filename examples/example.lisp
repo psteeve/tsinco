@@ -1,4 +1,4 @@
-(:source-file
+(defvar *source-file* '(:source-file
  :pos 0
  :end 21
  :statements ((:expression-statement
@@ -32,4 +32,4 @@
                      :pos 28
                      :end 28)
  :filename "astExplorer.tsx"
- :text "console.log('hello, world');")
+ :text "console.log('hello, world');"))

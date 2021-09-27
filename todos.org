@@ -1,10 +1,14 @@
-* TODO Start with the tools first 
+* TODO Start with the tools first
+** Write a node script to transform js file to sexp and feed a common lisp function to build clos object
+   js file -> sexp -> clos       clos -> [build-tools] -> effects
 
 * Create a macro 
 that take in argument a specifier in property list and call the class builder to produce objects.
 example:
 (m '(:string-literal :pos 12 :end 26 :text "hello, world"))
 => (make-instance 'string-literal :pos 12 :end 26 :text "hello, world")
+
+
 
 * Write program that take ts file and produce sexp expression to feed parse-simple-sexp.
 ** TODO Tokenizer

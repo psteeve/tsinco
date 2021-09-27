@@ -27,7 +27,7 @@ assume the definition of identifier exists."
 (defclass text-range ()
   ((pos :initarg :pos :initform 0 :reader pos)
    (end :initarg :end
-        :initform (error "Must supply a value for \"end\"")
+        :initform 0
         :reader end)))
 
 (defclass node (text-range)
@@ -41,9 +41,12 @@ assume the definition of identifier exists."
    (transform-flags :initarg :transform-flags :accessor transform-flags)))
 
 (defclass decorator (node)
-  ((kind :initarg :kind :initform :decorator :reader kind)
+  ((kind :initarg :kind
+         :initform :decorator
+         :reader kind)
    (expression :initarg :expression
-               :accessor expression)))
+               :initform (error "Must provide a value for \"expression\"")
+               :reader expression)))
 
 (defmethod initialize-instance :after ((object decorator) &key)
   (with-slots (expression) object

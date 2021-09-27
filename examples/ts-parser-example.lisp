@@ -47,15 +47,15 @@
 
 
 
-(defvar *module-delcaratiion* (:module-declaration
-                               :pos 0
-                               :end 113623
-                               :name (:identifier
-                                      :pos 9
-                                      :end 12
-                                      :escaped-text "ts")
-                               :body (:module-block
-                                      :pos 12
-                                      :end 113623
-                                      :statements (*type-alias-declaration* *function-declaration-1* *function-declaration-2*
-                                                                            *interface-declaration*))))
+(defvar *module-delcaratiion* '(:module-declaration
+                                :pos 0
+                                :end 113623
+                                :name (:identifier
+                                       :pos 9
+                                       :end 12
+                                       :escaped-text "ts")
+                                :body (:module-block
+                                       :pos 12
+                                       :end 113623
+                                       :statements (*type-alias-declaration* *function-declaration-1* *function-declaration-2*
+                                                    *interface-declaration*))))
