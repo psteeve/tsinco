@@ -60,15 +60,15 @@
      ampersand-equals-token
      bar-equals-token
      caret-equals-token
-     dotdot-token 
-     question-token 
-     exclamation-token 
-     colon-token 
-     equals-token 
-     asterisk-token 
-     equals-greater-than-token 
-     end-of-file-token 
-     readonly-token 
+     dotdot-token
+     question-token
+     exclamation-token
+     colon-token
+     equals-token
+     asterisk-token
+     equals-greater-than-token
+     end-of-file-token
+     readonly-token
      await-keyword-token))
 
 (define-token-class (abstract-keyword
