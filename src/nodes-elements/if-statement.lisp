@@ -1,0 +1,5 @@
+(defclass if-statement (statement)
+  ((kind :initarg :kind :initform :if-statement :reader kind)
+   (expression :initarg :expression :initform (error "Must supply value for expression") :reader expression)
+   (then-statement :initarg :then-statement :initform (error "Must supply value for then-statement") :reader then-statement)
+   (else-statement :initarg :else-statement :reader else-statement)))

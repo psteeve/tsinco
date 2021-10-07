@@ -1,0 +1,11 @@
+(in-package :tsinco.node-elements)
+
+(defclass node (text-range)
+  ((kind :initarg :kind :initform :node :accessor kind) 
+   (flags :initarg :flags :reader flags)
+   (decorators :initarg :decorators :accessor decorators)
+   (modifiers :initarg :modifiers :accessor modifiers)
+   (id :initarg :id :accessor id)
+   (parent :initarg :parent :accessor parent)
+   (modifier-flags-cache :initarg :modifier-flags-cache :accessor modifier-flags-cache)
+   (transform-flags :initarg :transform-flags :accessor transform-flags)))

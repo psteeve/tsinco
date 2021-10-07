@@ -1,0 +1,1 @@
+(defclass statement (node) ())
