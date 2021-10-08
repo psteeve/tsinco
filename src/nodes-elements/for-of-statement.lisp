@@ -1,0 +1,5 @@
+(defclass for-of-statement (iteration-statement)
+  ((kind :initarg :kind :initform :for-of-statement :reader kind)
+   (await-modifier :initarg await-modifier :reader await-modifier)
+   (initializer :initarg :for-initializer :initform (error "Must supply a value for initializer.") :reader initializer)
+   (expression :initarg :expression :initform (error "Must supply a value for expresson.") :reader expression)))
