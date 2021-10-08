@@ -1,0 +1,7 @@
+(defclass variable-declaration (named-declaration)
+  ((kind :initarg :kind :initform :variable-declaration :reader kind)
+   (parent :initarg :parent :initform (error "Must supply value for parent") :reader parent)
+   (name :initarg :name :initform (error "Must supply a value for name") :reader name)
+   (initializer :initarg :initializer :initform (error "Must supply a value form initializer.") :reader initializer)
+   (exclamation-token :initarg :exclamation-token :reader exclamation-token)
+   (v-type :initarg :v-type :reader v-type)))

@@ -1,0 +1,5 @@
+(defclass project-reference ()
+  ((path :initarg path :reader path)
+   (original-pathp :initarg :original-path-p :reader original-path-p)
+   (prependp :initarg :prependp :reader prependp)
+   (circularp :initarg :circularp :reader circularp)))

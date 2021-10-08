@@ -1,0 +1,2 @@
+(defclass script-reference-host () ())
+

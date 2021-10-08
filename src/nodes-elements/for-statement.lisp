@@ -1,0 +1,5 @@
+(defclass for-statement (iteration-statement)
+  ((kind :initarg :kind :initform :for-statement :reader kind)
+   (initializer :initarg :initializer  :reader initializer)
+   (the-condition :initarg :the-condition :reader the-condition)
+   (incrementor :initarg :incrementor :reader incrementor)))
