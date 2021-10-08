@@ -5,6 +5,10 @@
 
 (in-package :tsinco.ast)
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 1d6ab1773974bb68a70a6fb4f8c02e0d06b1d574
 (defgeneric get-compiler-options (script-reference-host))
 (defgeneric get-source-file (script-reference-host file-name))
 (defgeneric get-source-file-by-path (script-reference-host path))
