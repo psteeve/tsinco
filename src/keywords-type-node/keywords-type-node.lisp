@@ -1,6 +1,3 @@
-(defpackage :tsinco.keywords-type-node
-  (:use :common-lisp
-        :tsinco.utils))
 
 (in-package :tsinco.keywords-type-node)
 

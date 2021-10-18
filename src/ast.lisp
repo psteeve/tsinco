@@ -1,8 +1,3 @@
-(defpackage :tsinco.ast
-  (:use
-   :common-lisp
-   :st-utils))
-
 (in-package :tsinco.ast)
 
 (defgeneric get-compiler-options (script-reference-host))
